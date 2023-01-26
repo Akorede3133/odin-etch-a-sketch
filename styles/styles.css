@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.container {
+    width: 208px;
+    height: 208px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2), -4px -4px 5px rgba(0, 0, 0, 0.2);
+}
+.container span {
+    border: none;
+    border-left: none;
+    border-top: none;
+}
+.container .change {
+    background-color: black;
+}
+.selector {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+button {
+    border: none;
+    padding: 0 25px;
+    width: ;
+    text-align: center;
+    font-size: 18px;
+    background-color:;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eraser, .default, .clear, .rainbow{
+    background-color: white;
+    border: 1px solid black;
+}
+.selector .active {
+    background-color: black;
+    color: white;
+}
+
+.select-color {
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
