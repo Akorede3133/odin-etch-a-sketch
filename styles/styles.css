@@ -10,17 +10,22 @@ html {
 }
 body {
     background-color: white;
-    display: grid;
-    place-items: center;
+    padding: 20px;
     height: 100vh;
 }
+main {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
 .container {
-    width: 208px;
-    height: 208px;
+    width: 70%;
+    height: 250px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2), -4px -4px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .container span {
     border: none;
@@ -32,14 +37,19 @@ body {
 }
 .selector {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 30px;
 }
 button {
     border: none;
-    padding: 0 25px;
-    width: ;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    width: 100px;
     text-align: center;
     font-size: 18px;
     background-color:;
@@ -54,10 +64,37 @@ button {
     background-color: black;
     color: white;
 }
-
+.default {
+    color: white;
+}
 .select-color {
     border: none;
     height: 50px;
     width: 50px;
     cursor: pointer;
+}
+.range-text {
+    color: orangered;
+    font-size: 25px;
+    margin: 20px 0;
+}
+header {
+    font-size: 30px;
+    color: rgb(219, 13, 126);
+    letter-spacing: 2px;
+    text-align: ;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .selector {
+        flex-direction: row;
+    }
+    .container {
+        width: 60%;
+        height: 400px;
+    }
+    header {
+        text-align: center;
+    }
 }
